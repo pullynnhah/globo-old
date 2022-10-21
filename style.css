@@ -203,3 +203,7 @@ h3 {
 .gshow article:nth-child(2) {
   margin: 45px 0 45px auto;
 }
+
+.gshow h2 {
+  color: #EC8006;
+}
