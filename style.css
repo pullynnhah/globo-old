@@ -39,10 +39,13 @@ li a {
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  transition: all 200ms;
 }
 
-li a:hover {
+a {
+  transition: all 300ms;
+}
+
+a:hover {
   opacity: 0.6;
 }
 
@@ -86,44 +89,115 @@ li:nth-child(10) a {
   color: #a81d83;
 }
 
-@media (max-width: 375px) {
-  body {
-    font-family: "Open Sans", sans-serif;
-  }
+main {
+  width: 1250px;
+  margin: 34px auto 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 
-  header img {
-    width: 208px;
-  }
+.g1 {
+  width: 666px;
+}
 
-  ul.mobile {
-    width: 100vw;
+h1 {
+  color: #c4160c;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 67px;
+}
 
-    padding: 0 10vw;
-    display: flex;
-    justify-content: space-between;
-  }
+.hero p {
+  color: #303134;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
 
-  ul:not(.mobile) {
-    display: none;
-  }
+.hero p:first-of-type {
+  margin: 29px 0 7px;
+}
 
-  li:nth-child(1) a {
-    color: #c3170c;
-  }
+.news {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 36px 25px 0;
+}
 
-  li:nth-child(2) a {
-    color: #07aa47;
-  }
+.border {
+  padding: 25px 0;
+  border-top: 1px solid #ebedef;
+  border-bottom: 1px solid #ebedef;
+}
 
-  li:nth-child(3) a {
-    color: #e3662b;
-  }
+.news article {
+  width: 193px;
+}
 
-  li:nth-child(4) a {
-    color: #666;
-  }
+.news img,
+.ge img,
+.gshow img {
+  border-radius: 12px;
+  margin-bottom: 11px;
+}
 
-  li:nth-child(5) a {
-    color: #0769de;
-  }
+h2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.news h2 {
+  color: #c4170c;
+}
+
+h3 {
+  color: #2f3134;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 6px 0 5px;
+}
+
+.news p,
+.ge p,
+.gshow p {
+  color: #2f3134;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.ge {
+  width: 310px;
+  border-left: 1px solid #ebedef;
+  border-right: 1px solid #ebedef;
+}
+
+.ge article,
+.gshow article {
+  width: 240px;
+}
+
+.ge article {
+  margin: 0 auto;
+}
+
+.ge article:nth-child(2) {
+  margin: 40px auto;
+}
+
+.ge h2 {
+  color: #16ae54;
+}
+
+.gshow {
+  width: 275px;
+}
+
+.gshow article {
+  margin-left: auto;
+}
+.gshow article:nth-child(2) {
+  margin: 45px 0 45px auto;
 }
